@@ -1,0 +1,257 @@
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介 | Robert</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .intro {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #2575fc;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2 i {
+            margin-right: 10px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background: #eef5ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #2575fc;
+            transition: all 0.3s;
+        }
+        
+        .skill:hover {
+            background: #2575fc;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .experience-title, .education-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .experience-company, .education-school {
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .experience-date, .education-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-list {
+            list-style: none;
+        }
+        
+        .contact-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-list i {
+            width: 30px;
+            color: #2575fc;
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="个人照片" class="profile-img">
+        <h1>张三</h1>
+        <div class="title">前端开发工程师 & UI设计师</div>
+        <p class="intro">热爱技术，专注于创造优雅、高效的用户体验。拥有5年前端开发经验，擅长React、Vue等现代前端框架。</p>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2><i class="fas fa-user"></i> 关于我</h2>
+            <p>我是一名充满激情的前端开发工程师，拥有计算机科学学士学位。在工作中，我注重细节，追求代码质量和用户体验的完美结合。除了编程，我还热衷于学习新技术，参与开源项目，并在技术社区分享知识。</p>
+            <p>我相信技术能够改变世界，希望通过我的工作让数字世界变得更加美好和易用。</p>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fas fa-code"></i> 技能专长</h2>
+            <div class="skills">
+                <div class="skill">HTML5/CSS3</div>
+                <div class="skill">JavaScript/ES6+</div>
+                <div class="skill">React</div>
+                <div class="skill">Vue.js</div>
+                <div class="skill">TypeScript</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">UI/UX设计</div>
+                <div class="skill">响应式设计</div>
+                <div class="skill">Git</div>
+                <div class="skill">Webpack</div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fas fa-briefcase"></i> 工作经历</h2>
+            <div class="experience-item">
+                <div class="experience-title">高级前端开发工程师</div>
+                <div class="experience-company">ABC科技有限公司</div>
+                <div class="experience-date">2020年3月 - 至今</div>
+                <p>负责公司核心产品的前端架构设计和开发，带领5人前端团队，优化网站性能，提升用户体验。</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-title">前端开发工程师</div>
+                <div class="experience-company">XYZ互联网公司</div>
+                <div class="experience-date">2018年6月 - 2020年2月</div>
+                <p>参与多个大型项目的前端开发，使用React和Vue框架构建响应式Web应用。</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fas fa-graduation-cap"></i> 教育背景</h2>
+            <div class="education-item">
+                <div class="education-title">计算机科学与技术 学士</div>
+                <div class="education-school">某某大学</div>
+                <div class="education-date">2014年9月 - 2018年6月</div>
+                <p>主修课程：数据结构、算法设计、Web开发、数据库系统、计算机网络等。</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2><i class="fas fa-envelope"></i> 联系方式</h2>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> zhangsan@example.com</li>
+                <li><i class="fas fa-phone"></i> +86 138 0000 0000</li>
+                <li><i class="fab fa-github"></i> github.com/zhangsan</li>
+                <li><i class="fab fa-linkedin"></i> linkedin.com/in/zhangsan</li>
+                <li><i class="fas fa-map-marker-alt"></i> 北京市朝阳区</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 张三 - 个人简介</p>
+    </footer>
+</body>
+</html>
